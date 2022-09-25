@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FitYourSelfDataSet" targetNamespace="http://tempuri.org/FitYourSelfDataSet.xsd" xmlns:mstns="http://tempuri.org/FitYourSelfDataSet.xsd" xmlns="http://tempuri.org/FitYourSelfDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FitYourSelfConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FitYourSelfConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FitYourSelf.Properties.Settings.GlobalReference.Default.FitYourSelfConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UserMealsTableAdapter" GeneratorDataComponentClassName="UserMealsTableAdapter" Name="UserMeals" UserDataComponentName="UserMealsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FitYourSelfConnectionString (Settings)" DbObjectName="FitYourSelf.dbo.UserMeals" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Öğün Zamanı], Calorie, Fat, Carbonhidrate, Protein FROM dbo.UserMeals</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Öğün Zamanı" DataSetColumn="Öğün Zamanı" />
+              <Mapping SourceColumn="Calorie" DataSetColumn="Calorie" />
+              <Mapping SourceColumn="Fat" DataSetColumn="Fat" />
+              <Mapping SourceColumn="Carbonhidrate" DataSetColumn="Carbonhidrate" />
+              <Mapping SourceColumn="Protein" DataSetColumn="Protein" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FitYourSelfDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="FitYourSelfDataSet" msprop:Generator_DataSetName="FitYourSelfDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UserMeals" msprop:Generator_RowEvHandlerName="UserMealsRowChangeEventHandler" msprop:Generator_RowDeletedName="UserMealsRowDeleted" msprop:Generator_RowDeletingName="UserMealsRowDeleting" msprop:Generator_RowEvArgName="UserMealsRowChangeEvent" msprop:Generator_TablePropName="UserMeals" msprop:Generator_RowChangedName="UserMealsRowChanged" msprop:Generator_RowChangingName="UserMealsRowChanging" msprop:Generator_TableClassName="UserMealsDataTable" msprop:Generator_RowClassName="UserMealsRow" msprop:Generator_TableVarName="tableUserMeals" msprop:Generator_UserTableName="UserMeals">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Öğün_x0020_Zamanı" msprop:Generator_ColumnPropNameInRow="Öğün_Zamanı" msprop:Generator_ColumnPropNameInTable="Öğün_ZamanıColumn" msprop:Generator_ColumnVarNameInTable="columnÖğün_Zamanı" msprop:Generator_UserColumnName="Öğün Zamanı" type="xs:dateTime" />
+              <xs:element name="Calorie" msprop:Generator_ColumnPropNameInRow="Calorie" msprop:Generator_ColumnPropNameInTable="CalorieColumn" msprop:Generator_ColumnVarNameInTable="columnCalorie" msprop:Generator_UserColumnName="Calorie" type="xs:double" />
+              <xs:element name="Fat" msprop:Generator_ColumnPropNameInRow="Fat" msprop:Generator_ColumnPropNameInTable="FatColumn" msprop:Generator_ColumnVarNameInTable="columnFat" msprop:Generator_UserColumnName="Fat" type="xs:double" />
+              <xs:element name="Carbonhidrate" msprop:Generator_ColumnPropNameInRow="Carbonhidrate" msprop:Generator_ColumnPropNameInTable="CarbonhidrateColumn" msprop:Generator_ColumnVarNameInTable="columnCarbonhidrate" msprop:Generator_UserColumnName="Carbonhidrate" type="xs:double" />
+              <xs:element name="Protein" msprop:Generator_ColumnPropNameInRow="Protein" msprop:Generator_ColumnPropNameInTable="ProteinColumn" msprop:Generator_ColumnVarNameInTable="columnProtein" msprop:Generator_UserColumnName="Protein" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
